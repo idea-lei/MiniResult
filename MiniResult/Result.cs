@@ -50,7 +50,7 @@ public sealed class Result<T> : ResultBase where T : notnull
 
     /// <summary>
     /// You are not allowed to return the additional object due to failure. 
-    /// (which makes non sense otherwise)
+    /// (otherwise makes non sense)
     /// </summary>
     public static Result<T> Failed(string message)
     {
@@ -63,7 +63,7 @@ public sealed class Result<T> : ResultBase where T : notnull
 
     /// <summary>
     /// This method ignores the T object.
-    /// It is usually used in the call-chain when a method failed.
+    /// This is usually used in the call-chain when a method failed.
     /// </summary>
     /// <returns></returns>
     public Result ToNonGenericResult()
