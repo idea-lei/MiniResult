@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <SignAssembly>False</SignAssembly>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>SimpleResult</Title>
+    <Authors>lwei</Authors>
+    <Description>A class to represent local action result to avoid simply throw exception.</Description>
+  </PropertyGroup>
+
+</Project>
