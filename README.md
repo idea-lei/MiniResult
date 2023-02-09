@@ -5,6 +5,11 @@ A mini (can not be smaller anymore) class to represent local action result. You 
 ## Usage
 This Package is available for .NET 6 and above.
 
+In Package-Manager:
+``` 
+Install-Package MiniResult
+```
+
 ### Non-Generic Result Class
 ``` C#
 using SimpleResult;
@@ -29,4 +34,4 @@ Result<T>.Failed(string message);
 // This is usually used in the call-chain when a method failed.
 result.ToNonGenericResult()
 ```
-:coffee: [Buy me a coffee](https://www.buymeacoffee.com/idealei) :smiling_face_with_three_hearts:
+:coffee: [Buy me a coffee](https://www.buymeacoffee.com/idealei)
