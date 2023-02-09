@@ -5,9 +5,19 @@
     <Nullable>enable</Nullable>
     <SignAssembly>False</SignAssembly>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Title>SimpleResult</Title>
+    <Title>$(AssemblyName)</Title>
     <Authors>lwei</Authors>
     <Description>A class to represent local action result to avoid simply throw exception.</Description>
+    <PackageProjectUrl></PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/idea-lei/MiniResult</RepositoryUrl>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
