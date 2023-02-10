@@ -56,7 +56,7 @@ public sealed class Result<T> : ResultBase where T : notnull
     {
         return new Result<T>()
         {
-            IsSuccess = true,
+            IsSuccess = false,
             Message = message
         };
     }
