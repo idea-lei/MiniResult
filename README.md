@@ -14,7 +14,7 @@ Install-Package MiniResult
 
 ### Non-Generic Result Class
 ``` C#
-using SimpleResult;
+using MiniResult;
 
 Result.Ok(string? message);
 
@@ -25,15 +25,22 @@ Result.Failed(string message);
 ### Generic Result Class
 The generic Result class is to allow you to additionally return a object.
 ``` C#
-using SimpleResult;
+using MiniResult;
 
-Result<T>.Ok(T obj, string? message);
+return Result<T>.Ok(T obj, string? message);
 
-// You must specify a reason of failure
+// Or just return the object of type T (this will have no message)
+return obj;
+```
+
+On Failure
+``` C#
+You must specify a reason of failure
+
 // No target object will be returned (otherwise makes non sense)
-Result<T>.Failed(string message);
+return Result<T>.Failed(string message);
 
 // This is usually used in the call-chain when a method failed.
-result.ToNonGenericResult()
+return result.ToNonGenericResult()
 ```
 :coffee: [Buy me a coffee](https://www.buymeacoffee.com/idealei)
