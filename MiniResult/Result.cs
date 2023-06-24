@@ -75,4 +75,6 @@ public sealed class Result<T> : ResultBase where T : notnull
             return Result.Ok(Message);
         return Result.Failed(Message!);
     }
+
+    public static implicit operator Result<T>(T obj) => Result<T>.Ok(obj);
 }

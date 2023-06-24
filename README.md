@@ -2,6 +2,8 @@
 
 A mini (can not be smaller anymore) class to represent local action result. You can consider this as local version of ActionResult that does not involve http status.
 
+***WARNING***
+
 ## Usage
 This Package is available for .NET 6 and above.
 
