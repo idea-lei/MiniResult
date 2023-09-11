@@ -2,10 +2,10 @@
 
 A mini (can not be smaller anymore) class to represent local action result. You can consider this as local version of ActionResult that does not involve http status.
 
-***WARNING***
+**Breaking change:** between version 1.0.2 and 1.1.0: .net standard 2.0 does not officially support nullable.
 
 ## Usage
-This Package is available for .NET 6 and above.
+This Package is available for .NET standard 2.0 and above.
 
 In Package-Manager:
 ``` 
@@ -16,7 +16,7 @@ Install-Package MiniResult
 ``` C#
 using MiniResult;
 
-Result.Ok(string? message);
+Result.Ok(string message);
 
 // You must specify a reason of failure
 Result.Failed(string message);
@@ -27,7 +27,7 @@ The generic Result class is to allow you to additionally return a object.
 ``` C#
 using MiniResult;
 
-return Result<T>.Ok(T obj, string? message);
+return Result<T>.Ok(T obj, string message);
 
 // Or just return the object of type T (this will have no message)
 return obj;
